@@ -1,0 +1,9 @@
+<div class="card-group">
+  <div cardStyle class="card col-sm-3" *ngFor="let po of posts; let i = index">
+    <h3 class="card-title">{{ po.title }}</h3>
+
+    <h4 class="card-text">{{ po.info }}</h4>
+    <br />
+    <button type="button" (click)="edit(i)">Edit</button>
+  </div>
+</div>

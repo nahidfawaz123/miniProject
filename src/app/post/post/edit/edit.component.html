@@ -1,0 +1,14 @@
+<div class="card">
+  <br>
+  <br>
+  <input type="text" value="{{post.title}}" #titleRef>
+
+  <div class="card-body">
+    <input type="text" value="{{post.info}} "#infoRef>
+    <button type="button" (click)="onSetTo(titleRef.value , infoRef.value)">Edit </button>
+    <br>
+    <button class="btn btn-primary" type="button" (click)="back()">back </button>
+
+    <hr>
+  </div>
+ </div>
